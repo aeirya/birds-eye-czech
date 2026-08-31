@@ -25,16 +25,20 @@ jobs:
           set -Eeuo pipefail
           test -s index.html
           test -s grammar.html
+          test -s pronunciation.html
           test -s styles.css
+          test -s pronunciation.css
           test -s app.js
+          test -s pronunciation.js
           grep -q 'Bird.s-eye Czech' index.html
           grep -q 'Seven cases' grammar.html
+          grep -q 'Pronunciation' pronunciation.html
 
       - name: Stage site
         run: |
           set -Eeuo pipefail
           mkdir -p _site
-          cp -- index.html grammar.html styles.css app.js .nojekyll LICENSE _site/
+          cp -- index.html grammar.html pronunciation.html styles.css pronunciation.css app.js pronunciation.js .nojekyll LICENSE _site/
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
