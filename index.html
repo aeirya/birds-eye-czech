@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f4f1ea" />
+  <meta name="description" content="A bird's-eye Czech grammar map and practical field guide for a year in Prague." />
+  <title>Bird's-eye Czech</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar" id="top">
+    <div>
+      <p class="eyebrow">ONE YEAR IN CZECHIA · STARTING FROM ZERO</p>
+      <h1>Bird's-eye Czech</h1>
+      <p class="subtitle">Learn the Czech attached to what you need to do — while keeping the whole grammar system visible.</p>
+    </div>
+    <div class="topbar-actions">
+      <a class="pill-link primary" href="grammar.html">🧩 Grammar map</a>
+      <label class="toggle"><input id="translationsToggle" type="checkbox" checked><span>English</span></label>
+      <label class="toggle"><input id="learnedToggle" type="checkbox" checked><span>Show learned</span></label>
+    </div>
+  </header>
+
+  <nav class="jump-nav" aria-label="Jump within the field guide">
+    <a href="#today">⚡ First week</a>
+    <a href="#patterns">🧱 Patterns</a>
+    <a href="#phrases">🗣️ Phrases</a>
+    <a href="#survival">🔑 Tiny words</a>
+    <a href="grammar.html">🧩 Grammar</a>
+    <a href="#top">↑ Top</a>
+  </nav>
+
+  <main class="field-layout">
+    <aside class="control-stack" id="today">
+      <section class="panel controls">
+        <div class="control-head">
+          <div>
+            <p class="section-kicker">RIGHT NOW</p>
+            <h2>First-week missions</h2>
+          </div>
+          <button id="showAll" class="text-button" type="button">Show all</button>
+        </div>
+        <p class="filter-help">Pick what you're about to do. The list stays deliberately small enough to use outside.</p>
+        <div id="missionFilters" class="mission-list"></div>
+      </section>
+
+      <section class="panel controls">
+        <label class="search-field" for="search">
+          <span>Search Czech, English, or a tag</span>
+          <input id="search" type="search" placeholder="airport, kolej, ticket, towel…" autocomplete="off" />
+        </label>
+      </section>
+
+      <section class="panel controls progress-panel">
+        <div class="control-head"><h2>Useful enough to recall</h2><strong id="progressText">0 / 0</strong></div>
+        <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+        <button id="resetProgress" class="text-button danger" type="button">Reset learned phrases</button>
+      </section>
+
+      <section class="panel controls tip-panel">
+        <p class="section-kicker">THE FASTEST STRUCTURAL WIN</p>
+        <h2>Location vs direction</h2>
+        <p><strong>Jsem na koleji.</strong><br><span class="muted">I am at the dorm. · na + locative</span></p>
+        <p><strong>Jdu na kolej.</strong><br><span class="muted">I am going to the dorm. · na + accusative</span></p>
+        <p><strong>Jsem na letišti.</strong> → at the airport</p>
+        <p><strong>Jedu na letiště.</strong> → to the airport</p>
+        <a class="text-button inline-link" href="grammar.html#cases">Why the endings change →</a>
+      </section>
+    </aside>
+
+    <section class="study-area">
+      <section class="hero-panel panel">
+        <div>
+          <p class="section-kicker">YOUR FIRST MENTAL MODEL</p>
+          <h2>Czech is not “English with scary endings.”</h2>
+          <p>Those endings carry jobs that English often expresses with word order and prepositions. Read a Czech sentence by asking <strong>what form is this word in?</strong>, not only <strong>where is it?</strong>.</p>
+        </div>
+        <div class="hero-facts">
+          <a href="grammar.html#cases"><strong>7</strong><span>noun cases</span></a>
+          <a href="grammar.html#gender"><strong>3+1</strong><span>gender / animacy classes</span></a>
+          <a href="grammar.html#aspect"><strong>2</strong><span>aspectual viewpoints</span></a>
+          <a href="grammar.html#word-order"><strong>SVO</strong><span>safe neutral order</span></a>
+        </div>
+      </section>
+
+      <section id="patterns" class="panel patterns-panel">
+        <div class="control-head">
+          <div>
+            <p class="section-kicker">REUSABLE BEFORE YOU KNOW MUCH GRAMMAR</p>
+            <h2>Sentence frames</h2>
+          </div>
+        </div>
+        <div class="pattern-grid">
+          <article><strong>Kde je …?</strong><span>Where is …?</span><small>Kde je recepce?</small></article>
+          <article><strong>Jak se dostanu …?</strong><span>How do I get …?</span><small>Jak se dostanu na kolej?</small></article>
+          <article><strong>Potřebuji …</strong><span>I need …</span><small>Potřebuji jízdenku.</small></article>
+          <article><strong>Můžu …?</strong><span>Can I …?</span><small>Můžu platit kartou?</small></article>
+          <article><strong>Můžete …?</strong><span>Can you …? / Could you …?</span><small>Můžete mi pomoct?</small></article>
+          <article><strong>Máte …?</strong><span>Do you have …?</span><small>Máte levnější variantu?</small></article>
+          <article><strong>Kolik stojí …?</strong><span>How much is …?</span><small>Kolik stojí tahle jízdenka?</small></article>
+          <article><strong>Nerozumím.</strong><span>I don't understand.</span><small>Můžete to zopakovat?</small></article>
+        </div>
+      </section>
+
+      <div class="study-toolbar" id="phrases">
+        <div>
+          <p class="section-kicker">FIRST-WEEK CZECH</p>
+          <h2>Practical phrases</h2>
+          <p id="summary" class="summary"></p>
+        </div>
+      </div>
+
+      <div id="emptyState" class="empty" hidden>No phrases match this view.</div>
+      <div id="phraseGrid" class="phrase-grid"></div>
+
+      <section id="survival" class="panel basics-panel">
+        <div class="control-head">
+          <div>
+            <p class="section-kicker">SMALL WORDS, HUGE RETURN</p>
+            <h2>Things you'll see and hear constantly</h2>
+          </div>
+        </div>
+        <div class="basics-grid">
+          <article><strong>ano / ne</strong><span>yes / no</span></article>
+          <article><strong>prosím</strong><span>please · here you go · you're welcome</span></article>
+          <article><strong>děkuji / díky</strong><span>thank you / thanks</span></article>
+          <article><strong>dobrý den</strong><span>hello / good day</span></article>
+          <article><strong>promiňte</strong><span>excuse me / sorry</span></article>
+          <article><strong>kde</strong><span>where</span></article>
+          <article><strong>kam</strong><span>where to</span></article>
+          <article><strong>odkud</strong><span>where from</span></article>
+          <article><strong>kdy</strong><span>when</span></article>
+          <article><strong>jak</strong><span>how</span></article>
+          <article><strong>co</strong><span>what</span></article>
+          <article><strong>kdo</strong><span>who</span></article>
+          <article><strong>tady / tam</strong><span>here / there</span></article>
+          <article><strong>vpravo / vlevo / rovně</strong><span>right / left / straight</span></article>
+          <article><strong>vchod / východ</strong><span>entrance / exit</span></article>
+          <article><strong>otevřeno / zavřeno</strong><span>open / closed</span></article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Built for a year in Prague, starting with the first week.</span>
+    <span aria-hidden="true">·</span>
+    <a href="grammar.html">Grammar map</a>
+    <span aria-hidden="true">·</span>
+    <a href="https://github.com/ojs-inator/birds-eye-czech">GitHub</a>
+  </footer>
+
+  <nav class="mobile-tabbar" aria-label="Site navigation">
+    <a href="index.html" aria-current="page"><span>🗣️</span><small>Field guide</small></a>
+    <a href="grammar.html"><span>🧩</span><small>Grammar</small></a>
+    <a href="#patterns"><span>🧱</span><small>Patterns</small></a>
+    <a href="#today"><span>⚡</span><small>This week</small></a>
+  </nav>
+
+  <template id="phraseTemplate">
+    <article class="phrase-card">
+      <div class="phrase-head">
+        <div class="badges"></div>
+        <label class="learned-control"><input type="checkbox"><span>learned</span></label>
+      </div>
+      <p class="czech"></p>
+      <p class="english"></p>
+      <p class="phrase-note"></p>
+    </article>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
