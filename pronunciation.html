@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f4f1ea" />
+  <meta name="description" content="A Czech pronunciation decoder focused on spelling traps and comparisons with English, Spanish, Basque, Persian and Japanese." />
+  <title>Czech Pronunciation Decoder · Bird's-eye Czech</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pronunciation.css" />
+</head>
+<body class="pronunciation-page">
+  <header class="topbar" id="top">
+    <div>
+      <p class="eyebrow">READ CZECH BEFORE YOU CAN SPEAK IT</p>
+      <h1>Pronunciation<br>decoder</h1>
+      <p class="subtitle">What the spelling actually tells you — especially when a Czech letter does not mean what English or Spanish trained you to expect.</p>
+    </div>
+    <div class="topbar-actions">
+      <a class="pill-link primary" href="index.html">🗣️ Field guide</a>
+      <a class="pill-link" href="grammar.html">🧩 Grammar map</a>
+      <button class="pill-link speech-toggle" id="speechToggle" type="button" aria-pressed="true">🔊 Czech TTS on</button>
+    </div>
+  </header>
+
+  <nav class="grammar-jump-nav pronunciation-jump" aria-label="Jump within pronunciation guide">
+    <a href="#rules">Start here</a>
+    <a href="#vowels">Vowels</a>
+    <a href="#consonants">Consonants</a>
+    <a href="#hidden">Hidden changes</a>
+    <a href="#languages">Languages you know</a>
+    <a href="#phrases">Read real words</a>
+    <a href="#cheatsheet">Cheat sheet</a>
+    <a href="#top">↑ Top</a>
+  </nav>
+
+  <main class="pronunciation-shell">
+    <section class="pronunciation-hero panel">
+      <div>
+        <p class="section-kicker">THE GOOD NEWS</p>
+        <h2>Czech spelling is mostly honest.</h2>
+        <p>Once you relearn about a dozen letter values, Czech is dramatically more predictable than English. The difficult part is not random spelling: it is a handful of <strong>systematic spelling rules</strong>, especially <strong>ě</strong>, softening after <strong>i/í</strong>, vowel length, and voicing changes.</p>
+      </div>
+      <div class="legend-stack" aria-label="Pronunciation warning levels">
+        <span class="legend-chip safe">✓ say what you see</span>
+        <span class="legend-chip rule">↪ spelling rule</span>
+        <span class="legend-chip trap">! false-friend letter</span>
+      </div>
+    </section>
+
+    <section class="study-card" id="rules">
+      <p class="section-kicker">SIX RULES BEFORE THE ALPHABET</p>
+      <h2>The mental model</h2>
+      <div class="rule-grid">
+        <article>
+          <span class="rule-number">1</span>
+          <h3>Stress ≠ vowel length</h3>
+          <p>Stress is normally on the <strong>first syllable</strong>. The marks in <strong>á é í ó ú ů ý</strong> mean the vowel is <strong>longer</strong>, not stressed.</p>
+          <button class="say-button" type="button" data-say="Praha">▶ Praha</button>
+        </article>
+        <article>
+          <span class="rule-number">2</span>
+          <h3>Do not reduce unstressed vowels</h3>
+          <p>Unlike English, an unstressed Czech vowel normally stays a clear vowel. Do not turn everything into <em>uh</em>.</p>
+          <button class="say-button" type="button" data-say="koleje">▶ koleje</button>
+        </article>
+        <article>
+          <span class="rule-number">3</span>
+          <h3>i and y sound alike</h3>
+          <p>Standard Czech normally pronounces <strong>i = y</strong> and <strong>í = ý</strong>. Their spelling distinction is mostly historical and grammatical.</p>
+          <div class="mini-pair"><button class="say-button" type="button" data-say="být">▶ být</button><button class="say-button" type="button" data-say="bít">▶ bít</button></div>
+        </article>
+        <article>
+          <span class="rule-number">4</span>
+          <h3>ě modifies what comes before</h3>
+          <p>Do not invent a new “ě vowel”. It usually signals <strong>palatalisation</strong> or a hidden <strong>j</strong>-like sound.</p>
+          <button class="say-button" type="button" data-say="děkuji">▶ děkuji</button>
+        </article>
+        <article>
+          <span class="rule-number">5</span>
+          <h3>Spelling can stay voiced while speech devoices</h3>
+          <p>At the end of a word, a written voiced consonant is typically pronounced voiceless: <strong>led → “let”</strong>, <strong>muž → “muš”</strong>.</p>
+          <div class="mini-pair"><button class="say-button" type="button" data-say="led">▶ led</button><button class="say-button" type="button" data-say="muž">▶ muž</button></div>
+        </article>
+        <article>
+          <span class="rule-number">6</span>
+          <h3>r and l can be the vowel</h3>
+          <p>Czech can build a syllable around <strong>r</strong> or <strong>l</strong>. So <strong>krk</strong>, <strong>vlk</strong>, and <strong>prst</strong> are pronounceable without inserting an extra vowel.</p>
+          <div class="mini-pair"><button class="say-button" type="button" data-say="krk">▶ krk</button><button class="say-button" type="button" data-say="prst">▶ prst</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="study-card" id="vowels">
+      <p class="section-kicker">VOWELS</p>
+      <h2>Simple qualities; important length</h2>
+      <p class="study-note">Czech vowels are much closer to the clean vowel systems of Spanish, Basque, Persian or Japanese than to English. The new thing is that <strong>length itself can distinguish words</strong>.</p>
+      <div class="sound-table-wrap">
+        <table class="sound-table">
+          <thead><tr><th>Written</th><th>Say</th><th>Useful approximation</th><th>What not to do</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr class="safe-row"><td><strong>a</strong> /a/</td><td>clear a</td><td>Spanish/Basque <em>a</em></td><td>not English “ay”</td><td><button class="word-button" data-say="Praha">Praha</button></td></tr>
+            <tr class="safe-row"><td><strong>e</strong> /ɛ/</td><td>open e</td><td>roughly <em>e</em> in Spanish <em>mesa</em>, often a little more open</td><td>not English “ee”</td><td><button class="word-button" data-say="ten">ten</button></td></tr>
+            <tr class="safe-row"><td><strong>i, y</strong> /ɪ~i/</td><td>same basic vowel</td><td>short i; Prague speech can sound slightly more relaxed than Spanish i</td><td>do not give <strong>y</strong> an English “why” sound</td><td><button class="word-button" data-say="bydlím">bydlím</button></td></tr>
+            <tr class="safe-row"><td><strong>o</strong> /o/</td><td>clean o</td><td>Spanish/Basque <em>o</em></td><td>avoid turning it into English /oʊ/</td><td><button class="word-button" data-say="ano">ano</button></td></tr>
+            <tr class="safe-row"><td><strong>u</strong> /u/</td><td>short u</td><td>Spanish/Basque <em>u</em></td><td>not English “you”</td><td><button class="word-button" data-say="budu">budu</button></td></tr>
+            <tr class="rule-row"><td><strong>á é í ó ú ů ý</strong></td><td>same vowel, longer</td><td>Japanese vowel length is a useful analogy: duration matters</td><td>do not read the accent as stress</td><td><button class="word-button" data-say="dům">dům</button></td></tr>
+            <tr class="rule-row"><td><strong>ů</strong> /uː/</td><td>long u</td><td>sounds the same as <strong>ú</strong></td><td>the ring does not create a special vowel quality</td><td><button class="word-button" data-say="dům">dům</button></td></tr>
+            <tr class="safe-row"><td><strong>ou</strong> /ou̯/</td><td>one diphthong</td><td>roughly “oh-oo” compressed into one syllable</td><td>do not split into two full syllables</td><td><button class="word-button" data-say="jsou">jsou</button></td></tr>
+            <tr class="rule-row"><td><strong>ě</strong></td><td>usually /e/ plus a change before it</td><td>think “instruction to the previous consonant”</td><td>do not search for an independent ě sound</td><td><button class="word-button" data-say="město">město</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="study-card" id="consonants">
+      <p class="section-kicker">THE LETTERS MOST LIKELY TO TRICK YOU</p>
+      <h2>Decode these first</h2>
+      <div class="sound-card-grid">
+        <article class="sound-card trap-card">
+          <div class="sound-letter">c</div><div><h3>/ts/</h3><p>Like the final sound of English <em>cats</em>, but it can start a word.</p><p><strong>Spanish warning:</strong> Czech <strong>c</strong> is never Spanish <em>c</em> /k, θ, s/.</p><button class="say-button" data-say="cena">▶ cena</button></div>
+        </article>
+        <article class="sound-card safe-card">
+          <div class="sound-letter">č</div><div><h3>/tʃ/</h3><p>English/Spanish <strong>ch</strong>; Basque <strong>tx</strong>; Persian <strong>چ</strong>.</p><button class="say-button" data-say="čeština">▶ čeština</button></div>
+        </article>
+        <article class="sound-card safe-card">
+          <div class="sound-letter">š</div><div><h3>/ʃ/</h3><p>English <strong>sh</strong>; Basque <strong>x</strong>; Persian <strong>ش</strong>.</p><button class="say-button" data-say="škola">▶ škola</button></div>
+        </article>
+        <article class="sound-card safe-card">
+          <div class="sound-letter">ž</div><div><h3>/ʒ/</h3><p>English <em>vision</em>; Persian <strong>ژ</strong>. Much easier if Persian is in your sound inventory.</p><button class="say-button" data-say="žena">▶ žena</button></div>
+        </article>
+        <article class="sound-card trap-card">
+          <div class="sound-letter">j</div><div><h3>/j/</h3><p>English <strong>y</strong> in <em>yes</em>; Persian consonantal <strong>ی</strong>; Japanese <strong>y</strong>.</p><p><strong>Never English j /dʒ/.</strong></p><button class="say-button" data-say="jsem">▶ jsem</button></div>
+        </article>
+        <article class="sound-card trap-card">
+          <div class="sound-letter">ch</div><div><h3>/x/</h3><p>Spanish <strong>j</strong> is an excellent approximation; Persian <strong>خ</strong> is even more direct.</p><p><strong>Never English “ch”.</strong> Czech “ch” is <strong>č</strong>.</p><button class="say-button" data-say="chci">▶ chci</button></div>
+        </article>
+        <article class="sound-card rule-card">
+          <div class="sound-letter">h</div><div><h3>/ɦ/</h3><p>Usually voiced, unlike ordinary English /h/. Keep the throat open and add voice.</p><p>Important contrast: <strong>h ≠ ch</strong>.</p><button class="say-button" data-say="Praha">▶ Praha</button></div>
+        </article>
+        <article class="sound-card safe-card">
+          <div class="sound-letter">r</div><div><h3>/r/</h3><p>A tongue-tip tap/trill. Spanish <strong>r/rr</strong> gives you the right articulatory family.</p><p>Do not use the English approximant r.</p><button class="say-button" data-say="Praha">▶ Praha</button></div>
+        </article>
+        <article class="sound-card trap-card wide-sound-card">
+          <div class="sound-letter">ř</div><div><h3>/r̝/ — the Czech special</h3><p>A raised, fricated trill: roughly a tongue-tip <strong>r happening together with a ž-like friction</strong>. It is not simply “r + zh” in sequence.</p><p>For early survival Czech, an ordinary rolled <strong>r</strong> is a more useful fallback than freezing every time you see ř. Improve it later.</p><button class="say-button" data-say="Dvořák">▶ Dvořák</button><button class="say-button" data-say="tři">▶ tři</button></div>
+        </article>
+        <article class="sound-card safe-card">
+          <div class="sound-letter">ň</div><div><h3>/ɲ/</h3><p>Very close to Spanish <strong>ñ</strong>. The tongue body contacts the hard palate.</p><button class="say-button" data-say="kůň">▶ kůň</button></div>
+        </article>
+        <article class="sound-card rule-card">
+          <div class="sound-letter">ť</div><div><h3>/c/</h3><p>A palatalised voiceless stop. Think of a very soft <strong>t</strong> made with more of the tongue against the hard palate.</p><button class="say-button" data-say="ťukat">▶ ťukat</button></div>
+        </article>
+        <article class="sound-card rule-card">
+          <div class="sound-letter">ď</div><div><h3>/ɟ/</h3><p>The voiced partner of <strong>ť</strong>: a very soft/palatal <strong>d</strong>. Do not pronounce it as English “dj”.</p><button class="say-button" data-say="ďábel">▶ ďábel</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="study-card" id="hidden">
+      <p class="section-kicker">WHEN THE LETTERS ARE NOT THE WHOLE STORY</p>
+      <h2>Predictable hidden pronunciation rules</h2>
+      <div class="hidden-rule-grid">
+        <article>
+          <h3>di / ti / ni are soft</h3>
+          <p>In native Czech words, written <strong>d, t, n + i/í</strong> normally represents the palatal sounds <strong>ď, ť, ň</strong>.</p>
+          <div class="transform"><span>ti</span><b>→</b><span>ťi</span></div>
+          <p class="example-line"><button class="word-button" data-say="nikdy">nikdy</button> · <button class="word-button" data-say="tisíc">tisíc</button></p>
+        </article>
+        <article>
+          <h3>dě / tě / ně are also soft</h3>
+          <p>Here <strong>ě</strong> signals the same palatalisation: read them approximately as <strong>ďe / ťe / ňe</strong>.</p>
+          <div class="transform"><span>dě</span><b>→</b><span>ďe</span></div>
+          <p class="example-line"><button class="word-button" data-say="děkuji">děkuji</button> · <button class="word-button" data-say="něco">něco</button></p>
+        </article>
+        <article>
+          <h3>bě / pě / vě / fě hide a j</h3>
+          <p>After these labials, <strong>ě</strong> is normally heard approximately as <strong>je</strong>: bje, pje, vje, fje.</p>
+          <div class="transform"><span>bě</span><b>→</b><span>bje</span></div>
+          <p class="example-line"><button class="word-button" data-say="běžet">běžet</button> · <button class="word-button" data-say="pět">pět</button></p>
+        </article>
+        <article>
+          <h3>mě is special</h3>
+          <p><strong>mě</strong> is pronounced /mɲɛ/ — many learners hear something roughly like <strong>mňe</strong>.</p>
+          <div class="transform"><span>mě</span><b>→</b><span>mňe</span></div>
+          <p class="example-line"><button class="word-button" data-say="město">město</button> · <button class="word-button" data-say="mě">mě</button></p>
+        </article>
+        <article>
+          <h3>Final devoicing</h3>
+          <p>At a pause, voiced obstruents lose their voicing. The spelling stays morphological.</p>
+          <div class="devoice-list"><span>b → p</span><span>d → t</span><span>ď → ť</span><span>g → k</span><span>z → s</span><span>ž → š</span><span>h → ch</span></div>
+          <p class="example-line"><button class="word-button" data-say="led">led ≈ let</button> · <button class="word-button" data-say="muž">muž ≈ muš</button></p>
+        </article>
+        <article>
+          <h3>Consonants copy voicing in clusters</h3>
+          <p>Neighbouring obstruents tend to agree in voicing, usually according to the following consonant. So spelling can be more stable than the surface sound.</p>
+          <p class="study-note">For now: imitate whole words. You do not need to calculate every assimilation while speaking.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="study-card" id="languages">
+      <p class="section-kicker">USE SOUNDS YOU ALREADY OWN</p>
+      <h2>Czech through languages you know</h2>
+      <div class="language-grid">
+        <article class="language-card">
+          <h3>🇬🇧 English</h3>
+          <p class="good"><strong>Useful:</strong> č = <em>ch</em>, š = <em>sh</em>, ž = sound in <em>vision</em>.</p>
+          <p class="warning"><strong>Unlearn:</strong> j is not English j; c is not k/s; ch is not “ch”; r is not English r.</p>
+          <p><strong>Biggest rhythm change:</strong> stop reducing unstressed vowels to schwa.</p>
+        </article>
+        <article class="language-card">
+          <h3>🇪🇸 Spanish</h3>
+          <p class="good"><strong>Useful:</strong> clean vowels, r/rr articulation, ñ ≈ ň, Spanish j ≈ Czech ch, Spanish ch = Czech č.</p>
+          <p class="warning"><strong>Unlearn:</strong> Czech c is always /ts/; Czech j is /j/ like English y, not Spanish jota.</p>
+          <p><strong>New:</strong> phonemic vowel length and much heavier consonant clusters.</p>
+        </article>
+        <article class="language-card">
+          <h3>🟩 Basque</h3>
+          <p class="good"><strong>Very useful:</strong> tx ≈ č, x ≈ š, and Basque affricate spellings make Czech c /ts/ conceptually less strange.</p>
+          <p><strong>Shared advantage:</strong> clear vowels and comparatively transparent spelling.</p>
+          <p class="warning"><strong>Careful with j:</strong> Basque j has strong dialect variation, so it is a bad universal anchor for Czech j.</p>
+        </article>
+        <article class="language-card">
+          <h3>🇮🇷 Persian</h3>
+          <p class="good"><strong>Excellent anchors:</strong> چ ≈ č, ش ≈ š, ژ ≈ ž, خ ≈ ch, consonantal ی ≈ Czech j.</p>
+          <p><strong>Useful:</strong> a tongue-tip r is already much closer to Czech r than English r.</p>
+          <p class="warning"><strong>New:</strong> Czech writes essentially every vowel and marks long vowels explicitly.</p>
+        </article>
+        <article class="language-card">
+          <h3>🇯🇵 Japanese</h3>
+          <p class="good"><strong>Useful:</strong> phonemic vowel length is already a familiar idea; Japanese y gives a good model for Czech j.</p>
+          <p><strong>Helpful sound:</strong> Japanese つ demonstrates that /ts/ can behave as a single consonantal unit; Czech c is /ts/ without the following u.</p>
+          <p class="warning"><strong>Opposite challenge:</strong> Czech tolerates enormous consonant clusters and syllabic r/l.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="study-card" id="phrases">
+      <p class="section-kicker">READ WORDS YOU NEED THIS WEEK</p>
+      <h2>From spelling to sound</h2>
+      <p class="study-note">The rough readings below are deliberately not a replacement alphabet. They only flag the parts your English/Spanish instincts are likely to misread. Use the play buttons for the actual Czech target.</p>
+      <div class="reading-grid">
+        <article><button class="phrase-play" data-say="Dobrý den">🔊</button><div><strong>Dobrý den</strong><span>DO-brí den</span><small>ý = long i-like vowel; final written d in isolation would devoice, but here <em>den</em> begins with d.</small></div></article>
+        <article><button class="phrase-play" data-say="Děkuji">🔊</button><div><strong>Děkuji</strong><span>ĎE-ku-yi</span><small>dě → ďe; j = English y.</small></div></article>
+        <article><button class="phrase-play" data-say="Prosím">🔊</button><div><strong>Prosím</strong><span>PRO-siim</span><small>stress first syllable; í is long even though unstressed.</small></div></article>
+        <article><button class="phrase-play" data-say="Promiňte">🔊</button><div><strong>Promiňte</strong><span>PRO-miň-te</span><small>ň is Spanish-ñ-like.</small></div></article>
+        <article><button class="phrase-play" data-say="Kde je kolej?">🔊</button><div><strong>Kde je kolej?</strong><span>KDE ye KO-ley?</span><small>j = y; do not pronounce English j.</small></div></article>
+        <article><button class="phrase-play" data-say="Můžu platit kartou?">🔊</button><div><strong>Můžu platit kartou?</strong><span>MUU-zhu PLA-tit KAR-tou?</span><small>ů = long u; ž = Persian ژ / English vision; ou is a diphthong.</small></div></article>
+        <article><button class="phrase-play" data-say="Chci jízdenku">🔊</button><div><strong>Chci jízdenku</strong><span>KH-tsi YIIZ-den-ku</span><small>ch = Spanish j / Persian خ; c = ts; j = y.</small></div></article>
+        <article><button class="phrase-play" data-say="Jsem na koleji">🔊</button><div><strong>Jsem na koleji</strong><span>ysem na KO-le-yi</span><small>Initial j is /j/; final -ji contains the same y-like consonant.</small></div></article>
+        <article><button class="phrase-play" data-say="Na letiště, prosím">🔊</button><div><strong>Na letiště, prosím</strong><span>na LE-tiš-ťe, PRO-siim</span><small>š = sh; tě is soft/palatal.</small></div></article>
+        <article><button class="phrase-play" data-say="Můžete mi pomoct?">🔊</button><div><strong>Můžete mi pomoct?</strong><span>MUU-zhe-te mi PO-motst?</span><small>ž = /ʒ/; final c in <em>pomoct</em> contributes /ts/.</small></div></article>
+      </div>
+    </section>
+
+    <section class="study-card" id="cheatsheet">
+      <p class="section-kicker">30-SECOND DECODER</p>
+      <h2>When you see this, think this</h2>
+      <div class="cheat-grid">
+        <span><b>c</b><small>ts</small></span>
+        <span><b>č</b><small>ch / tx / چ</small></span>
+        <span><b>š</b><small>sh / x / ش</small></span>
+        <span><b>ž</b><small>vision / ژ</small></span>
+        <span><b>j</b><small>English y / ی</small></span>
+        <span><b>ch</b><small>Spanish j / خ</small></span>
+        <span><b>ň</b><small>Spanish ñ</small></span>
+        <span><b>ř</b><small>r + friction, simultaneous</small></span>
+        <span><b>y</b><small>sounds like i</small></span>
+        <span><b>ů</b><small>long u = ú</small></span>
+        <span><b>ě</b><small>modify previous consonant</small></span>
+        <span><b>á í…</b><small>long, not stressed</small></span>
+      </div>
+      <div class="callout success"><strong>Your practical target:</strong> get <strong>c / č / š / ž / j / ch</strong> right, preserve vowel length, and stop inserting English-style schwas. You can communicate very well before mastering <strong>ř</strong>.</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Bird's-eye Czech pronunciation decoder.</span>
+    <span aria-hidden="true">·</span>
+    <a href="index.html">Field guide</a>
+    <span aria-hidden="true">·</span>
+    <a href="grammar.html">Grammar map</a>
+    <span aria-hidden="true">·</span>
+    <a href="https://github.com/ojs-inator/birds-eye-czech">GitHub</a>
+  </footer>
+
+  <nav class="mobile-tabbar" aria-label="Site navigation">
+    <a href="index.html"><span>🗣️</span><small>Field guide</small></a>
+    <a href="grammar.html"><span>🧩</span><small>Grammar</small></a>
+    <a href="pronunciation.html" aria-current="page"><span>🔊</span><small>Sounds</small></a>
+    <a href="#cheatsheet"><span>⚡</span><small>Decoder</small></a>
+  </nav>
+
+  <script src="pronunciation.js" defer></script>
+</body>
+</html>
