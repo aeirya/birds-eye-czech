@@ -28,11 +28,17 @@ Learned phrases are stored only in browser `localStorage`.
 
 ## GitHub Pages
 
-The Pages workflow publishes the static site on pushes to `main`.
+This is a plain static site, so GitHub Pages should publish directly from the repository rather than through a custom Actions workflow.
+
+Configure **Settings → Pages → Build and deployment** as:
+
+- **Source:** Deploy from a branch
+- **Branch:** `main`
+- **Folder:** `/ (root)`
 
 Expected project URL:
 
-`https://ojs-inator.github.io/birds-eye-czech/`
+`https://aeirya.github.io/birds-eye-czech/`
 
 ## Content direction
 
