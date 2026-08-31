@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f4f1ea" />
+  <meta name="description" content="A top-down overview of Czech grammar: cases, gender, agreement, verbs, aspect, clitics and word order." />
+  <title>Czech Grammar Map · Bird's-eye Czech</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar grammar-header" id="top">
+    <div>
+      <p class="eyebrow">STRUCTURE BEFORE PARADIGM MEMORIZATION</p>
+      <h1>Czech grammar<br>from above</h1>
+      <p class="subtitle">A map of the system: what carries grammatical information, what agrees with what, and which distinctions deserve attention first.</p>
+    </div>
+    <div class="topbar-actions">
+      <a class="pill-link primary" href="index.html">🗣️ First-week Czech</a>
+    </div>
+  </header>
+
+  <nav class="grammar-jump-nav" aria-label="Jump within grammar guide">
+    <a href="#overview">Overview</a>
+    <a href="#sounds">Sounds</a>
+    <a href="#cases">Cases</a>
+    <a href="#gender">Gender</a>
+    <a href="#agreement">Agreement</a>
+    <a href="#pronouns">Pronouns</a>
+    <a href="#verbs">Verbs</a>
+    <a href="#aspect">Aspect</a>
+    <a href="#word-order">Word order</a>
+    <a href="#negation">Negation</a>
+    <a href="#learning">Learning order</a>
+    <a href="#top">↑ Top</a>
+  </nav>
+
+  <main class="grammar-shell">
+    <section class="grammar-intro" id="overview">
+      <article class="panel">
+        <p class="section-kicker">THE MAIN IDEA</p>
+        <h2>Czech moves grammar into the words themselves</h2>
+        <p>Czech is a <strong>West Slavic, fusional language</strong>. A single ending can simultaneously tell you several things: case, number and gender on nouns/adjectives, or person and tense on verbs. This is the big difference from English and a much bigger morphological load than Spanish.</p>
+        <div class="formula-line">sentence meaning ≈ lexical stems + inflection + agreement + aspect + information structure</div>
+        <p class="study-note">The consequence: do not treat an unfamiliar ending as noise. It is often exactly where the syntax is encoded.</p>
+        <div class="grammar-map">
+          <a href="#cases"><strong>Cases</strong><span>What job does this noun phrase have?</span></a>
+          <a href="#gender"><strong>Gender + animacy</strong><span>Which declension/agreement pattern applies?</span></a>
+          <a href="#agreement"><strong>Agreement</strong><span>Adjectives and some verb forms mirror noun features.</span></a>
+          <a href="#aspect"><strong>Aspect</strong><span>Is the event viewed as ongoing/repeated or as a bounded whole?</span></a>
+          <a href="#word-order"><strong>Word order</strong><span>Usually not who-did-what; often topic vs new information.</span></a>
+          <a href="#pronouns"><strong>Clitics</strong><span>Tiny unstressed forms have strong placement rules.</span></a>
+        </div>
+      </article>
+
+      <aside class="panel">
+        <p class="section-kicker">WHAT TO EXPECT</p>
+        <h2>Hard, but not random</h2>
+        <ol class="priority-list">
+          <li><strong>Cases</strong> are the biggest new machinery.</li>
+          <li><strong>Aspect</strong> is the biggest new verb concept.</li>
+          <li><strong>Agreement</strong> makes morphology spread across a phrase.</li>
+          <li><strong>Word order</strong> is freer than English, but not arbitrary.</li>
+          <li><strong>Pronunciation/spelling</strong> is comparatively systematic once the diacritics are familiar.</li>
+        </ol>
+        <div class="callout success"><strong>Good news:</strong> there are no articles, spelling is far more transparent than English, and the neutral SVO order is a perfectly safe default while you are learning.</div>
+      </aside>
+    </section>
+
+    <section class="grammar-column">
+      <section class="study-card" id="sounds">
+        <p class="section-kicker">SOUND + WRITING SYSTEM</p>
+        <h2>Read the diacritics as grammatical infrastructure</h2>
+        <p class="study-note">Czech uses the Latin alphabet, but the marks are not decoration: vowel length and consonant quality can distinguish words and interact with inflection.</p>
+        <div class="grammar-grid">
+          <article class="grammar-box">
+            <h3>Vowel length matters</h3>
+            <p><strong>a/e/i/o/u/y</strong> contrast with long <strong>á/é/í/ó/ú/ů/ý</strong>. Length is phonemic; do not treat an acute accent as stress.</p>
+          </article>
+          <article class="grammar-box">
+            <h3>Stress is usually first-syllable</h3>
+            <p>The normal word stress falls on the first syllable of the phonological word. Long vowels can occur elsewhere independently of stress.</p>
+          </article>
+          <article class="grammar-box">
+            <h3>Háček changes consonants</h3>
+            <p><strong>č, š, ž</strong> are roughly English <em>ch, sh</em> and the sound in <em>vision</em>. <strong>ň, ť, ď</strong> are palatal consonants. <strong>ř</strong> is the famous Czech raised fricative trill.</p>
+          </article>
+          <article class="grammar-box">
+            <h3>i and y sound alike in standard Czech</h3>
+            <p>The distinction is mostly morphological/orthographic today, but it remains crucial in spelling and often tells you something about the preceding consonant or paradigm.</p>
+          </article>
+          <article class="grammar-box">
+            <h3>ě is a signal, not just another vowel</h3>
+            <p>It changes how the preceding consonant is realised/spelled. Learn forms such as <strong>mě, tě, ně, dě, tě, ně</strong> as patterns rather than trying to pronounce a standalone “ě”.</p>
+          </article>
+          <article class="grammar-box">
+            <h3>ch counts as a traditional Czech letter</h3>
+            <p>It represents /x/, like German <em>Bach</em>. In traditional Czech alphabetical order it historically follows <strong>h</strong>.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="study-card" id="cases">
+        <p class="section-kicker">NOUN PHRASES · THE CENTRAL SYSTEM</p>
+        <h2>Seven cases: endings tell you the noun phrase's job</h2>
+        <p>English relies heavily on position: <em>the dog sees the man</em>. Czech can encode subject/object roles in the noun forms themselves, so word order has more freedom. Cases are traditionally called <strong>1.–7. pád</strong>, and Czech learners use the diagnostic questions below constantly.</p>
+
+        <div class="grammar-table-wrap">
+          <table class="grammar-table">
+            <thead><tr><th>Case</th><th>Czech question</th><th>Core idea</th><th>High-value triggers / examples</th></tr></thead>
+            <tbody>
+              <tr><td><span class="case-number">1</span><strong>Nominative</strong></td><td>kdo? co?</td><td>subject; dictionary form</td><td><strong>Student bydlí v Praze.</strong> · The student lives in Prague.</td></tr>
+              <tr><td><span class="case-number">2</span><strong>Genitive</strong></td><td>koho? čeho?</td><td>of/from; absence; quantity</td><td><strong>do Prahy</strong> to Prague · <strong>z koleje</strong> from the dorm · <strong>bez cukru</strong> without sugar</td></tr>
+              <tr><td><span class="case-number">3</span><strong>Dative</strong></td><td>komu? čemu?</td><td>to/for a recipient</td><td><strong>Pomůžete mi?</strong> Will you help me? · <strong>k lékaři</strong> to the doctor</td></tr>
+              <tr><td><span class="case-number">4</span><strong>Accusative</strong></td><td>koho? co?</td><td>direct object; destination with some prepositions</td><td><strong>Potřebuji jízdenku.</strong> · <strong>na kolej</strong> to the dorm · <strong>na letiště</strong> to the airport</td></tr>
+              <tr><td><span class="case-number">5</span><strong>Vocative</strong></td><td>—</td><td>direct address</td><td><strong>Petře!</strong> Peter! · <strong>pane profesore</strong> professor/sir (address)</td></tr>
+              <tr><td><span class="case-number">6</span><strong>Locative</strong></td><td>o kom? o čem?</td><td>location/topic; only after prepositions</td><td><strong>v Praze</strong> in Prague · <strong>na koleji</strong> at the dorm · <strong>o češtině</strong> about Czech</td></tr>
+              <tr><td><span class="case-number">7</span><strong>Instrumental</strong></td><td>kým? čím?</td><td>with/by/using; accompaniment</td><td><strong>kartou</strong> by card · <strong>s kamarádem</strong> with a friend</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout"><strong>Do not memorize “case = English preposition”.</strong> Learn case as a grammatical role plus the words that govern it. A Czech preposition or verb can demand a particular case.</div>
+
+        <div class="grammar-grid">
+          <article class="grammar-box">
+            <h3>The Prague triangle</h3>
+            <p><strong>Praha</strong> — Prague (Nom)</p>
+            <p><strong>do Prahy</strong> — to Prague (Gen)</p>
+            <p><strong>v Praze</strong> — in Prague (Loc)</p>
+            <p><strong>z Prahy</strong> — from Prague (Gen)</p>
+          </article>
+          <article class="grammar-box">
+            <h3>The dorm triangle</h3>
+            <p><strong>kolej</strong> — dorm (Nom)</p>
+            <p><strong>na kolej</strong> — to the dorm (Acc)</p>
+            <p><strong>na koleji</strong> — at the dorm (Loc)</p>
+            <p><strong>z koleje</strong> — from the dorm (Gen)</p>
+          </article>
+          <article class="grammar-box">
+            <h3>The airport contrast</h3>
+            <p><strong>Jsem na letišti.</strong> — I am at the airport.</p>
+            <p><strong>Jedu na letiště.</strong> — I am going to the airport.</p>
+            <p>Same preposition, different case because static location and destination are different relations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="study-card" id="gender">
+        <p class="section-kicker">NOUN CLASSES</p>
+        <h2>Gender chooses the declension pattern</h2>
+        <p>Czech nouns have <strong>masculine, feminine or neuter</strong> grammatical gender. Masculine is additionally split into <strong>animate vs inanimate</strong> in important parts of the morphology, especially the accusative and plural agreement patterns.</p>
+        <div class="grammar-grid">
+          <article class="grammar-box">
+            <h3>Useful first guess</h3>
+            <p>Consonant-final nouns are often masculine; <strong>-a</strong> nouns are often feminine; <strong>-o, -e, -í</strong> nouns are often neuter.</p>
+            <p class="study-note">These are prediction heuristics, not definitions. Learn the gender with the noun.</p>
+          </article>
+          <article class="grammar-box">
+            <h3>Masculine animacy matters</h3>
+            <p><strong>Vidím studenta.</strong> “I see a student.” Animate masculine objects often pattern with genitive forms.</p>
+            <p><strong>Vidím autobus.</strong> “I see a bus.” Inanimate masculine accusative often matches nominative.</p>
+          </article>
+          <article class="grammar-box">
+            <h3>Case × number × gender</h3>
+            <p>A noun's surface ending is not “the accusative ending”. It is the ending for a particular <strong>declension class + case + number</strong>.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="study-card" id="agreement">
+        <p class="section-kicker">FEATURES SPREAD THROUGH THE PHRASE</p>
+        <h2>Adjectives agree with their nouns</h2>
+        <p>Adjectives normally match the noun in <strong>case, number and gender</strong>. This makes Czech noun phrases information-rich: multiple words may independently reveal the same syntactic role.</p>
+        <div class="example-chain"><span class="stem">nový</span> student → vidím <span class="case">nového studenta</span> → mluvím s <span class="case">novým studentem</span></div>
+        <div class="compare-grid">
+          <article>
+            <h3>English</h3>
+            <p><em>with the new student</em></p>
+            <p>The preposition and position do most of the syntactic work. “new” does not change.</p>
+          </article>
+          <article>
+            <h3>Czech</h3>
+            <p><strong>s novým studentem</strong></p>
+            <p><strong>s</strong> selects instrumental; both adjective and noun show instrumental morphology.</p>
+          </article>
+        </div>
+        <div class="callout success">This redundancy is helpful for comprehension. You do not always need to identify every ending perfectly; several cues often point to the same analysis.</div>
+      </section>
+
+      <section class="study-card" id="pronouns">
+        <p class="section-kicker">PRONOUNS + CLITICS</p>
+        <h2>Pronouns decline too — and the short forms care about position</h2>
+        <p>Czech pronouns have case forms: roughly the kind of contrast English preserves only in pairs such as <em>I/me</em> or <em>he/him</em>, but much more extensively.</p>
+        <div class="grammar-grid">
+          <article class="grammar-box">
+            <h3>Long vs short forms</h3>
+            <p>Pronouns can have stressed/full forms and unstressed clitic forms. You will quickly meet <strong>mi</strong> “to me”, <strong>ti</strong> “to you”, <strong>ho</strong> “him/it”, <strong>se</strong> and <strong>si</strong>.</p>
+          </article>
+          <article class="grammar-box">
+            <h3>se / si are everywhere</h3>
+            <p>Some verbs are lexically reflexive, and Czech also uses reflexive constructions productively. Learn <strong>se/si together with the verb</strong> when they belong to its dictionary pattern.</p>
+          </article>
+          <article class="grammar-box">
+            <h3>Second-position tendency</h3>
+            <p>Unstressed auxiliaries and pronouns tend to form a clitic cluster near the <strong>second position of the clause</strong>, not simply “right after the verb”.</p>
+          </article>
+        </div>
+        <div class="example-chain">Včera <span class="case">jsem se</span> učil česky. → Yesterday I studied Czech.</div>
+        <p class="study-note">The clitic cluster <strong>jsem se</strong> follows the first constituent <strong>Včera</strong>. This is one reason Czech word order can look surprising even when the sentence is ordinary.</p>
+      </section>
+
+      <section class="study-card" id="verbs">
+        <p class="section-kicker">VERBAL MORPHOLOGY</p>
+        <h2>Person is straightforward; tense interacts with gender and aspect</h2>
+        <div class="grammar-grid">
+          <article class="grammar-box">
+            <h3>Present</h3>
+            <p>Verbs inflect for person and number. Subject pronouns are often omitted when context makes the subject clear.</p>
+            <p><strong>mluvím</strong> = I speak · <strong>mluvíš</strong> = you speak · <strong>mluvíme</strong> = we speak</p>
+          </article>
+          <article class="grammar-box">
+            <h3>Past</h3>
+            <p>The past uses an <strong>-l participle</strong>; in 1st/2nd person it appears with forms descended from “be”. The participle agrees with the subject's gender/number.</p>
+            <p><strong>dělal jsem</strong> (male speaker) · <strong>dělala jsem</strong> (female speaker)</p>
+          </article>
+          <article class="grammar-box">
+            <h3>Future</h3>
+            <p>Imperfective verbs commonly use <strong>budu + infinitive</strong>. Perfective verbs use their formally present-tense forms with future meaning.</p>
+            <p><strong>budu dělat</strong> vs <strong>udělám</strong></p>
+          </article>
+          <article class="grammar-box">
+            <h3>Conditional</h3>
+            <p>The conditional combines the past participle with special <strong>by</strong>-forms: <strong>dělal bych</strong> “I would do”. These forms also participate in clitic ordering.</p>
+          </article>
+        </div>
+        <div class="callout warning"><strong>Do not build your Czech verb system around English tense labels alone.</strong> Aspect often determines which tense form is natural and what it means.</div>
+      </section>
+
+      <section class="study-card" id="aspect">
+        <p class="section-kicker">THE SECOND BIG MOUNTAIN</p>
+        <h2>Aspect asks how you view the event</h2>
+        <p>Many Czech verbs come in imperfective/perfective relationships. The distinction is not simply “present vs past” or “ongoing vs completed”; it is a way of packaging the event.</p>
+        <div class="compare-grid">
+          <article>
+            <h3>Imperfective</h3>
+            <ul>
+              <li>ongoing / in progress</li>
+              <li>habitual / repeated</li>
+              <li>activity viewed internally</li>
+              <li>can have true present-time meaning</li>
+            </ul>
+            <p><strong>dělat</strong> — do / be doing</p>
+          </article>
+          <article>
+            <h3>Perfective</h3>
+            <ul>
+              <li>bounded whole</li>
+              <li>single completed result/event</li>
+              <li>often formed with a prefix, but not mechanically predictable</li>
+              <li>“present” forms normally refer to future</li>
+            </ul>
+            <p><strong>udělat</strong> — do / get done as a whole</p>
+          </article>
+        </div>
+        <div class="formula-line">imperfective present: dělám = I do / I am doing<br>perfective “present”: udělám = I will do / I will get it done</div>
+        <p class="study-note">Learn common verbs with their aspectual partner when there is a useful pair, but do not assume every prefix creates a clean one-to-one pair.</p>
+      </section>
+
+      <section class="study-card" id="word-order">
+        <p class="section-kicker">SYNTAX + INFORMATION STRUCTURE</p>
+        <h2>“Free word order” does not mean random word order</h2>
+        <p>Because case morphology marks many grammatical roles, Czech can reorder constituents more freely than English. The safe neutral order is still <strong>SVO</strong>. Reordering often changes <strong>topic, focus, contrast or rhythm</strong> rather than basic who-did-what meaning.</p>
+        <div class="grammar-grid">
+          <article class="grammar-box">
+            <h3>Neutral</h3>
+            <p><strong>Petr koupil auto.</strong></p>
+            <p>Petr bought a car.</p>
+          </article>
+          <article class="grammar-box">
+            <h3>Information flow</h3>
+            <p>Given/contextual information tends to occur earlier; new or contrastive information tends to occur later.</p>
+          </article>
+          <article class="grammar-box">
+            <h3>But clitics constrain freedom</h3>
+            <p>Short unstressed forms have placement rules, so not every logically imaginable order sounds natural.</p>
+          </article>
+        </div>
+        <div class="callout"><strong>Beginner rule:</strong> produce SVO; learn to <em>parse</em> other orders. You do not need stylistically native reordering in week one.</div>
+      </section>
+
+      <section class="study-card" id="negation">
+        <p class="section-kicker">NEGATION + QUESTIONS</p>
+        <h2>Czech negation is compact, and multiple negation is normal</h2>
+        <div class="grammar-grid">
+          <article class="grammar-box">
+            <h3>Verb negation</h3>
+            <p>Usually add <strong>ne-</strong>: <strong>rozumím → nerozumím</strong>, <strong>mám → nemám</strong>, <strong>je → není</strong>.</p>
+          </article>
+          <article class="grammar-box">
+            <h3>Negative concord</h3>
+            <p>Czech normally combines negative pronouns/adverbs with a negative verb: <strong>Nikdo nic neví.</strong> Literally “Nobody nothing doesn't-know” → Nobody knows anything.</p>
+          </article>
+          <article class="grammar-box">
+            <h3>Yes/no questions</h3>
+            <p>No English <em>do/does</em> is needed. Intonation and context can make a statement-shaped clause a question: <strong>Mluvíte anglicky?</strong></p>
+          </article>
+          <article class="grammar-box">
+            <h3>Question words decline</h3>
+            <p><strong>kdo/co</strong> themselves have case forms: <strong>koho, komu, čím…</strong>. The traditional case questions exploit exactly this.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="study-card" id="prepositions">
+        <p class="section-kicker">PREPOSITIONS AS CASE SELECTORS</p>
+        <h2>Learn preposition + case as one unit</h2>
+        <div class="grammar-table-wrap">
+          <table class="grammar-table">
+            <thead><tr><th>Preposition</th><th>Typical case</th><th>Useful example</th></tr></thead>
+            <tbody>
+              <tr><td><strong>do</strong> to/into</td><td>Genitive</td><td>do Prahy · do Španělska</td></tr>
+              <tr><td><strong>z / ze</strong> from/out of</td><td>Genitive</td><td>z Prahy · z koleje</td></tr>
+              <tr><td><strong>bez</strong> without</td><td>Genitive</td><td>bez cukru · bez bublinek</td></tr>
+              <tr><td><strong>k / ke</strong> toward/to</td><td>Dative</td><td>k lékaři</td></tr>
+              <tr><td><strong>v / ve</strong> in</td><td>Locative</td><td>v Praze · ve škole</td></tr>
+              <tr><td><strong>o</strong> about</td><td>Locative</td><td>o češtině</td></tr>
+              <tr><td><strong>s / se</strong> with</td><td>Instrumental</td><td>s kamarádem</td></tr>
+              <tr><td><strong>na</strong></td><td>Accusative or Locative</td><td>na kolej (to) · na koleji (at)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="study-card" id="learning">
+        <p class="section-kicker">HOW TO LEARN THIS WITHOUT DROWNING</p>
+        <h2>A top-down order that keeps the system visible</h2>
+        <div class="compare-grid">
+          <article>
+            <h3>Phase 1 · This week</h3>
+            <ul>
+              <li>pronounce the alphabet/diacritics passably</li>
+              <li>recognise the seven case <em>functions</em></li>
+              <li>learn location ↔ destination contrasts</li>
+              <li>learn 20–40 phrases attached to real tasks</li>
+              <li>notice endings; do not memorize every table yet</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Phase 2 · First month</h3>
+            <ul>
+              <li>one model noun per major gender pattern</li>
+              <li>adjective agreement with those models</li>
+              <li>present + past of high-frequency verbs</li>
+              <li>common preposition-case frames</li>
+              <li>basic se/si and clitic recognition</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Phase 3 · Then</h3>
+            <ul>
+              <li>aspect pairs systematically</li>
+              <li>plural declension and masculine animacy details</li>
+              <li>numbers + genitive behavior</li>
+              <li>motion verbs and prefixes</li>
+              <li>native-like information structure / clitic ordering</li>
+            </ul>
+          </article>
+        </div>
+        <div class="callout warning"><strong>Avoid the classic rabbit hole:</strong> memorizing fourteen-cell noun tables before you can ask where the laundry room is. Learn <em>why</em> a case is selected, then accumulate endings around high-frequency nouns.</div>
+        <div class="callout success"><strong>Best unit of study:</strong> a useful phrase + its structural explanation. Example: <strong>Můžu platit kartou?</strong> → useful immediately, and it teaches that “by card” uses instrumental <strong>kartou</strong>.</div>
+      </section>
+
+      <section class="study-card" id="guidelines">
+        <p class="section-kicker">MENTAL CHECKLIST FOR ANY CZECH SENTENCE</p>
+        <h2>Parse in this order</h2>
+        <ol class="priority-list">
+          <li><strong>Find the finite verb.</strong> What person/tense/aspect clues does it contain?</li>
+          <li><strong>Identify obvious prepositions.</strong> They strongly predict the case of the following phrase.</li>
+          <li><strong>Look at noun/adjective endings together.</strong> Agreement gives redundant clues.</li>
+          <li><strong>Do not assign subject/object purely by position.</strong> Check case and verb agreement.</li>
+          <li><strong>Spot clitics.</strong> jsem, se, si, mi, ti, ho… often explain the “weird” early cluster.</li>
+          <li><strong>Only then interpret word order.</strong> Ask what is old/contextual vs new/emphasised information.</li>
+        </ol>
+      </section>
+
+      <section class="study-card">
+        <p class="section-kicker">REFERENCE POINTS</p>
+        <h2>Good places to verify the system</h2>
+        <p class="study-note">This page is meant as a personal map, not a replacement for a full grammar. For deeper checking:</p>
+        <ul>
+          <li><a href="https://blog.ujop.cuni.cz/what-are-czech-cases-and-how-to-remember-them/">Charles University ÚJOP · Czech cases</a></li>
+          <li><a href="https://universaldependencies.org/cs/feat/Case.html">Universal Dependencies · Czech case inventory</a></li>
+          <li><a href="https://ufal.mff.cuni.cz/pdt2.0/doc/manuals/en/t-layer/html/ch10s01s01.html">ÚFAL / Prague Dependency Treebank · Czech word order and topic-focus articulation</a></li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html">First-week field guide</a>
+    <span aria-hidden="true">·</span>
+    <a href="#top">Back to top</a>
+    <span aria-hidden="true">·</span>
+    <a href="https://github.com/ojs-inator/birds-eye-czech">GitHub</a>
+  </footer>
+
+  <nav class="mobile-tabbar" aria-label="Site navigation">
+    <a href="index.html"><span>🗣️</span><small>Field guide</small></a>
+    <a href="grammar.html" aria-current="page"><span>🧩</span><small>Grammar</small></a>
+    <a href="#cases"><span>7</span><small>Cases</small></a>
+    <a href="#aspect"><span>↔</span><small>Aspect</small></a>
+  </nav>
+</body>
+</html>
