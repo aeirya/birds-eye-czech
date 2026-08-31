@@ -2,10 +2,11 @@
 
 A small static study site for learning Czech from zero while living in Prague for a year.
 
-It deliberately combines two layers:
+It deliberately combines three layers:
 
 - **First-week field guide** — practical Czech for transport, Kolej 17. listopadu, dorm setup, shopping, food, and airport travel.
 - **Bird's-eye grammar map** — a top-down overview of the Czech system: sound/spelling, seven cases, gender and animacy, agreement, pronouns/clitics, verbs, aspect, word order, negation, and a recommended learning order.
+- **Pronunciation decoder + drills** — spelling-to-sound rules, comparisons with familiar languages, Czech TTS examples, and focused listening contrasts.
 
 The design follows the same low-dependency philosophy as `ten-days-in-istanbul` and `esponyol-inator`: plain HTML/CSS/JS, responsive layout, no build system, no framework.
 
@@ -21,8 +22,12 @@ Then open `http://localhost:8000/`.
 
 - `index.html` — first-week field guide
 - `grammar.html` — top-down Czech grammar overview
+- `pronunciation.html` — spelling/pronunciation decoder
+- `pronunciation-drills.html` — listening contrasts and spelling reflex drills
 - `styles.css` — shared responsive styling
+- `pronunciation.css` / `pronunciation-drills.css` — pronunciation-specific styling
 - `app.js` — mission filters, search, translation toggle, learned-state tracking
+- `pronunciation.js` / `pronunciation-drills.js` — browser Czech TTS and listening interactions
 
 Learned phrases are stored only in browser `localStorage`.
 
@@ -49,6 +54,8 @@ Examples:
 - `Jsem na koleji.` ↔ `Jdu na kolej.` → locative vs accusative
 - `Můžu platit kartou?` → instrumental
 - `Letím do Španělska.` → `do` + genitive
+- `byt` ↔ `být` → vowel length, not stress
+- `rada` ↔ `řada` → `r` vs Czech `ř`
 
 ## License
 
