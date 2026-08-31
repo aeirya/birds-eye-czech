@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f4f1ea" />
+  <meta name="description" content="Focused Czech pronunciation listening drills for vowel length, r/ř, h/ch, and spelling-to-sound traps." />
+  <title>Pronunciation Drills · Bird's-eye Czech</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pronunciation.css" />
+  <link rel="stylesheet" href="pronunciation-drills.css" />
+</head>
+<body class="pronunciation-page drills-page">
+  <header class="topbar" id="top">
+    <div>
+      <p class="eyebrow">HEAR THE CONTRAST, THEN READ IT</p>
+      <h1>Pronunciation<br>drills</h1>
+      <p class="subtitle">Short listening contrasts for the Czech distinctions most worth noticing early. Browser Czech TTS is used as practice audio, not as a phonetics oracle.</p>
+    </div>
+    <div class="topbar-actions">
+      <a class="pill-link" href="pronunciation.html">🔊 Decoder</a>
+      <a class="pill-link" href="index.html">🗣️ Field guide</a>
+      <button class="pill-link speech-toggle" id="speechToggle" type="button" aria-pressed="true">🔊 Czech TTS on</button>
+    </div>
+  </header>
+
+  <nav class="grammar-jump-nav" aria-label="Jump within pronunciation drills">
+    <a href="#listen">Listening quiz</a>
+    <a href="#pairs">Contrast pairs</a>
+    <a href="#spelling">Spelling traps</a>
+    <a href="#top">↑ Top</a>
+  </nav>
+
+  <main class="pronunciation-shell">
+    <section class="panel drill-hero">
+      <div>
+        <p class="section-kicker">FOCUS ORDER</p>
+        <h2>Do not spend your first week fighting ř.</h2>
+        <p>Prioritise <strong>vowel length</strong>, <strong>c / č</strong>, <strong>j</strong>, <strong>ch / h</strong>, and clean unreduced vowels. Then train <strong>r / ř</strong> and palatal consonants.</p>
+      </div>
+      <div class="priority-tags"><span>1 · length</span><span>2 · false-friend letters</span><span>3 · voicing</span><span>4 · ř</span></div>
+    </section>
+
+    <section class="study-card" id="listen">
+      <p class="section-kicker">LISTEN WITHOUT LOOKING FIRST</p>
+      <h2>Which word did you hear?</h2>
+      <p class="study-note">Choose a contrast, press play, then pick the spelling you think was spoken. The order is randomized. Your score stays only in this tab.</p>
+
+      <div class="quiz-toolbar">
+        <label>Contrast
+          <select id="contrastSelect"></select>
+        </label>
+        <button id="newRound" class="say-button" type="button">↻ New round</button>
+        <span id="score" class="score">0 / 0</span>
+      </div>
+
+      <div class="listening-card" id="listeningCard">
+        <button id="playPrompt" class="big-play" type="button" aria-label="Play Czech word">▶</button>
+        <p class="listen-instruction">Listen, then choose:</p>
+        <div id="answerChoices" class="answer-choices"></div>
+        <p id="feedback" class="quiz-feedback" aria-live="polite"></p>
+        <button id="reveal" class="text-button" type="button">Reveal answer</button>
+      </div>
+    </section>
+
+    <section class="study-card" id="pairs">
+      <p class="section-kicker">SIDE-BY-SIDE CONTRASTS</p>
+      <h2>Train the distinction, not isolated words</h2>
+      <div class="pair-grid">
+        <article class="pair-card">
+          <h3>Short vs long vowel</h3>
+          <p><strong>byt</strong> “apartment” vs <strong>být</strong> “to be”</p>
+          <div class="pair-buttons"><button data-say="byt">▶ byt</button><button data-say="být">▶ být</button></div>
+          <small>The acute accent changes duration, not stress position.</small>
+        </article>
+        <article class="pair-card">
+          <h3>Short vs long vowel</h3>
+          <p><strong>pan</strong> “Mr.” vs <strong>pán</strong> “gentleman/master”</p>
+          <div class="pair-buttons"><button data-say="pan">▶ pan</button><button data-say="pán">▶ pán</button></div>
+        </article>
+        <article class="pair-card">
+          <h3>r vs ř</h3>
+          <p><strong>rada</strong> “advice” vs <strong>řada</strong> “row/series”</p>
+          <div class="pair-buttons"><button data-say="rada">▶ rada</button><button data-say="řada">▶ řada</button></div>
+          <small>ř is a fricated trill, not r followed by ž.</small>
+        </article>
+        <article class="pair-card">
+          <h3>š vs ž</h3>
+          <p><strong>šít</strong> “to sew” vs <strong>žít</strong> “to live”</p>
+          <div class="pair-buttons"><button data-say="šít">▶ šít</button><button data-say="žít">▶ žít</button></div>
+          <small>Same place of articulation; ž is voiced.</small>
+        </article>
+        <article class="pair-card">
+          <h3>i vs y spelling</h3>
+          <p><strong>bít</strong> “to hit” vs <strong>být</strong> “to be”</p>
+          <div class="pair-buttons"><button data-say="bít">▶ bít</button><button data-say="být">▶ být</button></div>
+          <small>In standard Czech these are homophones: the spelling difference is grammatical/historical.</small>
+        </article>
+        <article class="pair-card">
+          <h3>Final devoicing</h3>
+          <p><strong>led</strong> “ice” vs written <strong>let</strong></p>
+          <div class="pair-buttons"><button data-say="led">▶ led</button><button data-say="let">▶ let</button></div>
+          <small>Word-final d is normally pronounced [t], so the surface sounds can coincide.</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="study-card" id="spelling">
+      <p class="section-kicker">READING REFLEXES</p>
+      <h2>Kill the wrong-language reflex</h2>
+      <div class="reflex-grid">
+        <article><span class="wrong">c ≠ k/s</span><strong>c → ts</strong><button data-say="cena">▶ cena</button></article>
+        <article><span class="wrong">j ≠ English j</span><strong>j → y</strong><button data-say="jsem">▶ jsem</button></article>
+        <article><span class="wrong">ch ≠ English ch</span><strong>ch → Spanish j / Persian خ</strong><button data-say="chci">▶ chci</button></article>
+        <article><span class="wrong">č ≠ k</span><strong>č → ch / Basque tx / چ</strong><button data-say="čeština">▶ čeština</button></article>
+        <article><span class="wrong">á ≠ stress mark</span><strong>á → long a</strong><button data-say="pán">▶ pán</button></article>
+        <article><span class="wrong">ě ≠ new vowel</span><strong>ě modifies what precedes it</strong><button data-say="děkuji">▶ děkuji</button></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="pronunciation.html">Pronunciation decoder</a><span>·</span><a href="index.html">Field guide</a><span>·</span><a href="https://github.com/aeirya/birds-eye-czech">GitHub</a>
+  </footer>
+
+  <script src="pronunciation-drills.js" defer></script>
+</body>
+</html>
